@@ -462,3 +462,143 @@ Served asset /jquery.js - 304 Not Modified (0ms)
   [1m[36m (175.3ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
   [1m[35m (0.3ms)[0m  SELECT version FROM `schema_migrations`
   [1m[36m (31.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111004085527')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-04 16:08:23 +0200
+  Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT `projects`.* FROM `projects` [0m
+Rendered projects/index.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 128ms (Views: 125.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-04 16:08:24 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:24 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:24 +0200
+Served asset /projects.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2011-10-04 16:08:24 +0200
+Served asset /projects.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:24 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:24 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2011-10-04 16:08:26 +0200
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = ? LIMIT 1  [["id", "1"]]
+Rendered projects/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-04 16:08:26 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2011-10-04 16:08:26 +0200
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:26 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:26 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:26 +0200
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:26 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2011-10-04 16:08:34 +0200
+  Processing by ProjectsController#new as HTML
+Rendered projects/_form.html.erb (12.3ms)
+Rendered projects/new.html.erb within layouts/application (80.1ms)
+Completed 200 OK in 91ms (Views: 89.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-04 16:08:34 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at 2011-10-04 16:08:34 +0200
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:34 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:34 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:34 +0200
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-04 16:08:34 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/not-here" for 127.0.0.1 at 2011-10-04 16:08:51 +0200
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"not-here"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = ? LIMIT 1[0m  [["id", "not-here"]]
+Completed 404 Not Found in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Project with id=not-here):
+  app/controllers/projects_controller.rb:23:in `show'
+
+Rendered /home/ruben/.rvm/gems/ruby-1.9.2-p290@ticketee/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/ruben/.rvm/gems/ruby-1.9.2-p290@ticketee/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /home/ruben/.rvm/gems/ruby-1.9.2-p290@ticketee/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/projects/not-here" for 127.0.0.1 at 2011-10-04 16:10:27 +0200
+  Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"not-here"}
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = ? LIMIT 1[0m  [["id", "not-here"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Project with id=not-here):
+  app/controllers/projects_controller.rb:23:in `show'
+
+Rendered /home/ruben/.rvm/gems/ruby-1.9.2-p290@ticketee/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /home/ruben/.rvm/gems/ruby-1.9.2-p290@ticketee/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /home/ruben/.rvm/gems/ruby-1.9.2-p290@ticketee/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (133.7ms)[0m  DROP DATABASE IF EXISTS `ticketee_test`
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE `ticketee_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (108.1ms)[0m  CREATE TABLE `projects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (93.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  SHOW KEYS FROM `schema_migrations`
+  [1m[36m (208.2ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (31.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111004085527')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (88.9ms)[0m  DROP DATABASE IF EXISTS `ticketee_test`
+  [1m[36m (0.1ms)[0m  [1mCREATE DATABASE `ticketee_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (103.7ms)[0m  CREATE TABLE `projects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (66.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.3ms)[0m  SHOW KEYS FROM `schema_migrations`
+  [1m[36m (183.4ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (39.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111004085527')[0m
