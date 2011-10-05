@@ -36,13 +36,18 @@ end
 group :test, :development do
   gem 'rspec-rails', '~> 2.5'
 end
+
 gem 'execjs'
 gem 'therubyracer'
+
 group :test do
   gem 'cucumber-rails'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl'
 end
+
+gem 'devise', '~> 1.4.3'
+
 
 
