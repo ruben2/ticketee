@@ -1,4 +1,5 @@
 Ticketee::Application.routes.draw do
+
   devise_for :users
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -54,6 +55,10 @@ Ticketee::Application.routes.draw do
   end
 
   root :to => 'projects#index'
+
+  namespace :admin do
+    resources :users
+  end
 
   # See how all your routes lay out with "rake routes"
 
