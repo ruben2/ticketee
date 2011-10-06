@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7204b834-804c-40c3-99c8-e01b2582f2e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/project.rb" afterPath="$PROJECT_DIR$/app/models/project.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/hidden_links.feature" afterPath="$PROJECT_DIR$/features/hidden_links.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/viewing_projects.feature" afterPath="$PROJECT_DIR$/features/viewing_projects.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/signing_up.feature" afterPath="$PROJECT_DIR$/features/signing_up.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
     </list>
@@ -30,33 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="viewing_projects.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/viewing_projects.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="45" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="permission.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/permission.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projects_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/projects_controller_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="39" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="projects_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,46 +39,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hidden_links.feature" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hidden_links.feature" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/hidden_links.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="59" selection-start="422" selection-end="422" vertical-scroll-proportion="0.24229075">
+            <state line="11" column="59" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="creating_tickets.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/creating_tickets.feature">
+      <file leaf-file-name="signing_in.feature" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/signing_in.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
+            <state line="9" column="75" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deleting_tickets.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/deleting_tickets.feature">
+      <file leaf-file-name="signing_up.feature" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/signing_up.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="61" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editing_tickets.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/editing_tickets.feature">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="63" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewing_tickets.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/viewing_tickets.feature">
+      <file leaf-file-name="confirmation.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/confirmation.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="4" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.044378698">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registrations_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="35" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,11 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/features/editing_users.feature" />
-        <option value="$PROJECT_DIR$/app/views/admin/users/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/features/deleting_users.feature" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/permission_steps.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/projects_controller_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/permission.rb" />
@@ -150,6 +136,11 @@
         <option value="$PROJECT_DIR$/app/models/project.rb" />
         <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
         <option value="$PROJECT_DIR$/features/hidden_links.feature" />
+        <option value="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/features/signing_up.feature" />
+        <option value="$PROJECT_DIR$/app/views/admin/users/confirmation.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/confirmation.html.erb" />
       </list>
     </option>
   </component>
@@ -416,7 +407,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ticketee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ticketee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="tickets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ticketee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ticketee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -878,21 +909,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="221" y="111" width="878" height="868" extended-state="0" />
+    <frame x="776" y="60" width="878" height="868" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32042253" sideWeight="0.67086613" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32042253" sideWeight="0.6710183" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -941,51 +972,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/user_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/editing_users.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="6" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="71" selection-start="149" selection-end="149" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/deleting_users.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/permission_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="99" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/permission.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/projects_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="39" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0">
@@ -1044,7 +1030,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/hidden_links.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="59" selection-start="422" selection-end="422" vertical-scroll-proportion="0.24229075">
+        <state line="11" column="59" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/signing_in.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="75" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/registrations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="35" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/signing_up.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/confirmation.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.044378698">
           <folding />
         </state>
       </provider>
