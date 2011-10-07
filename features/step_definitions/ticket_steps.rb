@@ -11,18 +11,6 @@ Given /^"([^\"]*)" has created a ticket for this project:$/ do |email, table|
   end
 end
 
-
-Then /^I should see "([^"]*)" within "([^"]*)"$/ do |text, selector|
-  with_scope(selector) do
-     if defined?(Spec::Rails::Matchers)
-       page.should have_xpath('//*', :text => text)
-     else
-       assert page.has_xpath?('//*', :text => text)
-     end
-  end
-end
-
 When /^I attach the file "([^"]*)" to "([^"]*)"$/ do |path, field|
-  attach_file(field, path)
+  attach_file(field, path) # express the regexp above with the code you wish you had
 end
-

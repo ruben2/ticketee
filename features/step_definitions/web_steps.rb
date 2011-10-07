@@ -14,24 +14,26 @@ When /^(?:|I )press "([^"]*)"$/ do |button|
   click_button(button)
 end
 
-Then /^(?:|I )should see "([^"]*)"$/ do |text|
-  if page.respond_to? :should
-    page.should have_content(text)
-  else
-    assert page.has_content?(text)
+Then /^(?:|I )should see "([^\"]*)"(?: within "([^\"]*)")?$/ do |text, selector|
+  with_scope(selector) do
+    if defined?(Spec::Rails::Matchers)
+      page.should have_content(text)
+    else
+      assert page.has_content?(text)
+    end
   end
 end
 
-Then /^(?:|I )should see \/([^\/]*)\/$/ do |regexp|
+Then /^(?:|I )should see \/([^\/]*)\/(?: within "([^\"]*)")?$/ do |regexp, selector|
   regexp = Regexp.new(regexp)
-
-  if page.respond_to? :should
-    page.should have_xpath('//*', :text => regexp)
-  else
-    assert page.has_xpath?('//*', :text => regexp)
+  with_scope(selector) do
+    if defined?(Spec::Rails::Matchers)
+      page.should have_xpath('//*', :text => regexp)
+    else
+      assert page.has_xpath?('//*', :text => regexp)
+    end
   end
 end
-
 Then /^(?:|I )should not see "([^"]*)"$/ do |text|
   if page.respond_to? :should
     page.should have_no_content(text)
