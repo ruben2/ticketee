@@ -22,3 +22,7 @@ Then /^I should see "([^"]*)" within "([^"]*)"$/ do |text, selector|
   end
 end
 
+When /^I attach the file "([^"]*)" to "([^"]*)"$/ do |path, field|
+  attach_file(field, path)
+end
+

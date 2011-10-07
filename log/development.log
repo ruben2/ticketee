@@ -3513,3 +3513,80 @@ Served asset /application.js - 304 Not Modified (0ms)
   [1m[35m (33.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111005134723')
   [1m[36m (33.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111004144028')[0m
   [1m[35m (41.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111004085527')
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProjects (20111004085527)
+Migrating to CreateTickets (20111004144028)
+Migrating to DeviseCreateUsers (20111005075722)
+Migrating to AddConfirmableFieldsToUsers (20111005083108)
+Migrating to AddUserIdToTickets (20111005090259)
+Migrating to AddAdminToUsers (20111005134723)
+Migrating to CreatePermissions (20111006070157)
+Migrating to AddAttachmentAssetToTicket (20111007074051)
+  [1m[35m (277.1ms)[0m  ALTER TABLE `tickets` ADD `asset_file_name` varchar(255)
+  [1m[36m (200.0ms)[0m  [1mALTER TABLE `tickets` ADD `asset_content_type` varchar(255)[0m
+  [1m[35m (208.4ms)[0m  ALTER TABLE `tickets` ADD `asset_file_size` int(11)
+  [1m[36m (208.6ms)[0m  [1mALTER TABLE `tickets` ADD `asset_updated_at` datetime[0m
+  [1m[35m (40.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20111007074051')
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.4ms)[0m  SHOW KEYS FROM `permissions`
+  [1m[36m (0.3ms)[0m  [1mSHOW KEYS FROM `projects`[0m
+  [1m[35m (0.4ms)[0m  SHOW KEYS FROM `tickets`
+  [1m[36m (0.4ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (255.3ms)[0m  DROP DATABASE IF EXISTS `ticketee_test`
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE `ticketee_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (89.5ms)[0m  CREATE TABLE `permissions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `thing_id` int(11), `thing_type` varchar(255), `action` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (74.2ms)[0m  [1mCREATE TABLE `projects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (77.0ms)[0m  CREATE TABLE `tickets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `project_id` int(11), `created_at` datetime, `updated_at` datetime, `user_id` int(11), `asset_file_name` varchar(255), `asset_content_type` varchar(255), `asset_file_size` int(11), `asset_updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mSHOW KEYS FROM `tickets`[0m
+  [1m[35m (166.5ms)[0m  CREATE INDEX `index_tickets_on_project_id` ON `tickets` (`project_id`)
+  [1m[36m (83.6ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime, `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `admin` tinyint(1) DEFAULT 0) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  SHOW KEYS FROM `users`
+  [1m[36m (182.9ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (0.5ms)[0m  SHOW KEYS FROM `users`
+  [1m[36m (191.0ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)[0m
+  [1m[35m (82.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35m (199.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (30.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111007074051')
+  [1m[36m (38.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111005075722')[0m
+  [1m[35m (36.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111005083108')
+  [1m[36m (33.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111005090259')[0m
+  [1m[35m (33.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111005134723')
+  [1m[36m (33.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111006070157')[0m
+  [1m[35m (33.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111004144028')
+  [1m[36m (33.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111004085527')[0m
+
+
+Started GET "/system/assets/1/original/file.txt." for 127.0.0.1 at 2011-10-07 09:48:06 +0200
+
+ActionController::RoutingError (No route matches [GET] "/system/assets/1/original/file.txt."):
+  
+
+Rendered /home/ruben/.rvm/gems/ruby-1.9.2-p290@ticketee/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (265.8ms)[0m  DROP DATABASE IF EXISTS `ticketee_test`
+  [1m[36m (0.2ms)[0m  [1mCREATE DATABASE `ticketee_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (110.7ms)[0m  CREATE TABLE `permissions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `thing_id` int(11), `thing_type` varchar(255), `action` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (74.0ms)[0m  [1mCREATE TABLE `projects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (90.3ms)[0m  CREATE TABLE `tickets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `project_id` int(11), `created_at` datetime, `updated_at` datetime, `user_id` int(11), `asset_file_name` varchar(255), `asset_content_type` varchar(255), `asset_file_size` int(11), `asset_updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mSHOW KEYS FROM `tickets`[0m
+  [1m[35m (191.4ms)[0m  CREATE INDEX `index_tickets_on_project_id` ON `tickets` (`project_id`)
+  [1m[36m (77.4ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime, `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `admin` tinyint(1) DEFAULT 0) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  SHOW KEYS FROM `users`
+  [1m[36m (207.8ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (0.3ms)[0m  SHOW KEYS FROM `users`
+  [1m[36m (217.7ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)[0m
+  [1m[35m (88.1ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35m (183.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (31.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111007074051')
+  [1m[36m (35.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111005075722')[0m
+  [1m[35m (38.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111005083108')
+  [1m[36m (41.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111005090259')[0m
+  [1m[35m (33.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111005134723')
+  [1m[36m (35.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111006070157')[0m
+  [1m[35m (38.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20111004144028')
+  [1m[36m (33.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20111004085527')[0m
