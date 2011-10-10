@@ -74,7 +74,11 @@ Ticketee::Application.routes.draw do
     resources :users do
       resources :permissions
     end
-    resources :states
+    resources :states do
+      member do
+        get :make_default
+      end
+    end
   end
 
   # See how all your routes lay out with "rake routes"
