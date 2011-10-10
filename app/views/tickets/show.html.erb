@@ -13,7 +13,7 @@
 
   <% if @ticket.assets.exists? %>
     <h3>Attached File</h3>
-    <div class="asset">
+    <div class="assets">
       <% @ticket.assets.each do |asset| %>
         <p>
             <%= link_to File.basename(asset.asset_file_name), asset.asset.url %>

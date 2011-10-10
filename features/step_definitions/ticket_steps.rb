@@ -12,5 +12,5 @@ Given /^"([^\"]*)" has created a ticket for this project:$/ do |email, table|
 end
 
 When /^I attach the file "([^"]*)" to "([^"]*)"$/ do |path, field|
-  attach_file(field, path) # express the regexp above with the code you wish you had
+  attach_file(field, File.expand_path(path)) # express the regexp above with the code you wish you had
 end
