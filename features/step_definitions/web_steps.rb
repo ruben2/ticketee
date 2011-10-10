@@ -62,3 +62,6 @@ When /^I select "([^"]*)" from "([^"]*)"$/ do |value, field|
   select(value, :from=>field)
 end
 
+Given /^"([^"]*)" can change states on the "([^"]*)" project \# features\/step_definitions\/permission_steps\.rb:(\d+)$/ do |arg1, arg2, arg3|
+  pending # express the regexp above with the code you wish you had
+end

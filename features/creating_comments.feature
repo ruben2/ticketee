@@ -14,12 +14,12 @@ Feature: Creating comments
         | title                   | description                            |
         | Change a ticket's state | You should be able to create a comment |
       Given I am on the homepage
-      And I follow "Ticketee"
+      And I follow "Ticketee" within "#projects"
       Given there is a state called "Open"
 
     Scenario: Creating a comment
       Then show me the page
-      And I follow "Ticketee" within "#projects"
+      #And I follow "Ticketee" within "#projects"
       When I follow "Change a ticket's state"
       And I fill in "Text" with "Added a comment!"
       And I press "Create Comment"
@@ -28,14 +28,15 @@ Feature: Creating comments
 
     Scenario: Creating an invalid comment
       Then show me the page
-      And I follow "Ticketee" within "#projects"
+      #And I follow "Ticketee" within "#projects"
       When I follow "Change a ticket's state"
       And I press "Create Comment"
       Then I should see "Comment has not been created."
       And I should see "Text can't be blank"
 
     Scenario: Changing a ticket's state
-      And I follow "Ticketee" within "#projects"
+      Given "user@ticketee.com" can change states on the "Ticketee" project
+      #And I follow "Ticketee" within "#projects"
       When I follow "Change a ticket's state"
       When I fill in "Text" with "This is a real issue"
       And I select "Open" from "State"
@@ -44,3 +45,10 @@ Feature: Creating comments
       And I should see "Open" within "#ticket"
       Then show me the page
       Then I should see "Open" within "#comments"
+
+    Scenario: A user without permission cannot change the state
+      #Given "user@ticketee.com" can change states on the "Ticketee" project # features/step_definitions/permission_steps.rb:3
+      #And I follow "Ticketee" within "#projects"
+      When I follow "Change a ticket's state"
+      Then I should not see the "#comment_state_id" element
+
