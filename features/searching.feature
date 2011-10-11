@@ -19,9 +19,22 @@ Feature: Searching
       | Tagged! | Hey! I'm it now! | iteration_2 |
     Given I am on the homepage
     And I follow "Ticketee" within "#projects"
+    And "user@ticketee.com" has created a ticket for this project:
+      | title | description     | tags        | state |
+      | Tag!  | Hey! You're it! | iteration_1 | Open  |
+    And "user@ticketee.com" has created a ticket for this project:
+      | title    | description      | tags        | state   |
+      | Tagged!  | Hey! I'm it now! | iteration_2 | Closer  |
 
   Scenario: Finding by tag
     When I fill in "Search" with "tag:iteration_1"
     And I press "Search"
     Then I should see "Tag!"
     And I should not see "Tagged!"
+
+  Scenario: Finding by state
+    When I fill in "Search" with "state:Open"
+    And I press "Search"
+    Then I should see "Tag!"
+    And I should not see "Tagged!"
+
