@@ -65,3 +65,9 @@ end
 Given /^"([^"]*)" can change states on the "([^"]*)" project \# features\/step_definitions\/permission_steps\.rb:(\d+)$/ do |arg1, arg2, arg3|
   pending # express the regexp above with the code you wish you had
 end
+
+Then /^I should not see "([^"]*)" within "([^"]*)"$/ do |text, selector|
+  have_selector(selector).matches?(response) do |content|
+    content.to_html.should_not include(text)
+  end
+end
