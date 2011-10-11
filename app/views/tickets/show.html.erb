@@ -3,6 +3,8 @@
 
   <small>Created by <%= @ticket.user.email %></small>
 
+  <div id='tags'><%= render @ticket.tags %></div>
+
   <%= simple_format(@ticket.description) %>
 
   <% if @ticket.assets.exists? %>
@@ -31,7 +33,7 @@
   <%= render "comments/form" %>
   <%= render @ticket.state if @ticket.state %>
 
-    <%= authorized?("edit tickets", @project) do %>
+  <%= authorized?("edit tickets", @project) do %>
     <%= link_to "Edit Ticket", [:edit, @project, @ticket] %>
   <% end %>
   <%= authorized?("delete tickets", @project) do %>
