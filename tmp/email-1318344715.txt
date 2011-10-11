@@ -1,0 +1,34 @@
+Date: Tue, 11 Oct 2011 16:51:55 +0200
+From: from@example.com
+To: alice@ticketee.com
+Message-ID: <4e94580be09da_342012ea74c264df@dev07.mail>
+Subject: [ticketee] TextMate 2 -Release date
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_4e94580bc953f_342012ea74c26112";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+----==_mimepart_4e94580bc953f_342012ea74c26112
+Date: Tue, 11 Oct 2011 16:51:55 +0200
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4e94580bdf760_342012ea74c2624c@dev07.mail>
+
+
+
+----==_mimepart_4e94580bc953f_342012ea74c26112
+Date: Tue, 11 Oct 2011 16:51:55 +0200
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4e94580be0252_342012ea74c263c4@dev07.mail>
+
+
+
+----==_mimepart_4e94580bc953f_342012ea74c26112--

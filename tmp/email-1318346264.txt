@@ -1,0 +1,40 @@
+Date: Tue, 11 Oct 2011 17:17:44 +0200
+From: from@example.com
+To: alice@ticketee.com
+Message-ID: <4e945e1822bde_37517e4f5043970@dev07.mail>
+Subject: [ticketee] TextMate 2 - Release date
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_4e945e18268e_37517e4f5043670";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+
+----==_mimepart_4e945e18268e_37517e4f5043670
+Date: Tue, 11 Oct 2011 17:17:44 +0200
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4e945e1821961_37517e4f50437b7@dev07.mail>
+
+Hello!
+bob@ticketee.com (User) has just updated the Release date ticket forTextMate 2.
+They wrote:
+Is it out yet?
+You can view this ticket on line by going to:
+http://localhost:3000/projects/50/tickets/50
+
+
+----==_mimepart_4e945e18268e_37517e4f5043670
+Date: Tue, 11 Oct 2011 17:17:44 +0200
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-ID: <4e945e182245e_37517e4f5043855@dev07.mail>
+
+
+
+----==_mimepart_4e945e18268e_37517e4f5043670--
