@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7204b834-804c-40c3-99c8-e01b2582f2e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ticket.rb" afterPath="$PROJECT_DIR$/app/models/ticket.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tags/_tag.html.erb" afterPath="$PROJECT_DIR$/app/views/tags/_tag.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/searching.feature" afterPath="$PROJECT_DIR$/features/searching.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/ticket_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/ticket_steps.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
     </list>
     <ignored path="ticketee.iws" />
@@ -28,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_tag.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_tag.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/tags/_tag.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="56" selection-start="56" selection-end="56" vertical-scroll-proportion="-0.0">
+            <state line="4" column="69" selection-start="340" selection-end="340" vertical-scroll-proportion="0.111317255">
               <folding />
             </state>
           </provider>
@@ -55,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ticket.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ticket.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="61" selection-start="268" selection-end="268" vertical-scroll-proportion="0.21314387">
+            <state line="8" column="61" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,7 +84,7 @@
       <file leaf-file-name="searching.feature" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/searching.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="13" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0">
+            <state line="42" column="19" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,7 +136,6 @@
         <option value="$PROJECT_DIR$/features/creating_comments.feature" />
         <option value="$PROJECT_DIR$/features/creating_tickets.feature" />
         <option value="$PROJECT_DIR$/features/deleting_tags.feature" />
-        <option value="$PROJECT_DIR$/app/views/tags/_tag.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tags/remove.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tags_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -146,8 +144,9 @@
         <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tickets_controller.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/ticket_steps.rb" />
-        <option value="$PROJECT_DIR$/features/searching.feature" />
         <option value="$PROJECT_DIR$/app/models/ticket.rb" />
+        <option value="$PROJECT_DIR$/features/searching.feature" />
+        <option value="$PROJECT_DIR$/app/views/tags/_tag.html.erb" />
       </list>
     </option>
   </component>
@@ -945,7 +944,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="478" y="633" width="1920" height="1019" extended-state="0" />
+    <frame x="643" y="527" width="1920" height="1019" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33478734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1051,13 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tags/_tag.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="56" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="18" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
@@ -1107,16 +1099,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/searching.feature">
+    <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0">
+        <state line="8" column="61" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ticket.rb">
+    <entry file="file://$PROJECT_DIR$/features/searching.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="61" selection-start="268" selection-end="268" vertical-scroll-proportion="0.21314387">
+        <state line="42" column="19" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tags/_tag.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="69" selection-start="340" selection-end="340" vertical-scroll-proportion="0.111317255">
           <folding />
         </state>
       </provider>
