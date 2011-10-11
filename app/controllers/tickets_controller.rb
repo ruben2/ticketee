@@ -51,6 +51,11 @@ class TicketsController < ApplicationController
     redirect_to @project
   end
 
+  def search
+    @tickets = @project.tickets.search(params[:search])
+    render "projects/show"
+  end
+
   def authorize_create!
     if !current_user.admin? && cannot?("create tickets".to_sym, @project)
       flash[:alert] = "You cannot create tickets on this project."
