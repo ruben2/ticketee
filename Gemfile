@@ -33,6 +33,7 @@ gem 'turn', :require => false
 end
 
 group :test, :development do
+  gem 'gmail'
   gem 'rspec-rails', '~> 2.5'
 end
 
