@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7204b834-804c-40c3-99c8-e01b2582f2e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/api/v1/projects_spec.rb" afterPath="$PROJECT_DIR$/spec/api/v1/projects_spec.rb" />
     </list>
     <ignored path="ticketee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +30,7 @@
       <file leaf-file-name="projects_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/api/v1/projects_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+            <state line="23" column="9" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -42,7 +39,7 @@
       <file leaf-file-name="base_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="10" selection-start="320" selection-end="320" vertical-scroll-proportion="0.22753793">
+            <state line="4" column="24" selection-start="116" selection-end="116" vertical-scroll-proportion="0.07001167">
               <folding />
             </state>
           </provider>
@@ -146,9 +143,9 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/spec/support/api/helper.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/spec/api/v1/projects_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/projects_controller.rb" />
         <option value="$PROJECT_DIR$/spec/api/v1/authentication_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/api/v1/projects_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" />
       </list>
     </option>
@@ -821,7 +818,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="479" y="488" width="1920" height="1006" extended-state="0" />
+    <frame x="949" y="236" width="1920" height="1006" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33960176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -963,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/api/v1/projects_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/projects_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="33" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
@@ -984,9 +974,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/api/v1/projects_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="9" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="320" selection-end="320" vertical-scroll-proportion="0.22753793">
+        <state line="4" column="24" selection-start="116" selection-end="116" vertical-scroll-proportion="0.07001167">
           <folding />
         </state>
       </provider>

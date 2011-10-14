@@ -17,6 +17,14 @@ describe "/api/v1/projects", :type => :api do
     end
 
     let(:url) { "/api/v1/projects" }
+
+    it "XML" do
+      get "#{url}.xml", :token => token
+      last_response.body.should eql(Project.readable_by(user).to_xml)
+      projects = Nokogiri::XML(last_response.body)
+      projects.css("project name").text.should eql("Ticketee")
+    end
+
     it "json" do
       get "#{url}.json"
 
