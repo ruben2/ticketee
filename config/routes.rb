@@ -93,6 +93,12 @@ Ticketee::Application.routes.draw do
     end
   end
 
+  namespace :api do
+    namespace :v1 do
+      resources :projects
+    end
+  end
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
